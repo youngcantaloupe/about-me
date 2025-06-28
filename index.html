@@ -1,170 +1,93 @@
 <!DOCTYPE html>
-<!--
-Project:  project-2-about-me-css
-Name: Porter Sampson
-Submitted: 30-05-2025
- 
-I declare that the following source code was written by me, or provided
-by the instructor for this project. I understand that copying source
-code from any other source, providing source code to another student, 
-or leaving my code on a public web site constitutes cheating.
-I acknowledge that  If I am found in violation of this policy this may result
-in a zero grade, a permanent record on file and possibly immediate failure of the class.
- 
-Reflection:
--->
 
 <html>
-<div>
 <head>
-    <title>About Porter Sampson</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Porter Sampson-Home</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<header class="header">
-    <h1>Porter Sampson</h1>
-    <!-- <hr> -->
-</header>
-
 <body>
-<div class="grid-container"> 
-            <div class="info">
-                <h2>Personal Info:</h2>
-                <p>
-                    <ul>
-                        <li><strong>Major</strong>: Computer Science</li>
-                        <li><strong>High School:</strong> Hershey High, Hershey Pennsylvania. 2019</li>
-                        <li><strong>Current year at UVU:</strong> Junior</li>
-                        <li><strong>Favorite icecream:</strong> Mint chocolate chip</li>
-                    </ul>
-                </p>
-            </div>
-            <div class="picture">
-                <img src="css/assets/me.png">
-            </div>
-            <div class="books">
-                <h2>My five favorite books:</h2>
-                    <ol>
-                        <li><em>Season of Storms,</em>
-                            <a href="https://sapkowskibooks.com/pages/about-the-writer">Andrzej Sapkowski</a></li>
-                        <li><em>The Time of Contempt,</em>
-                            <a href="https://sapkowskibooks.com/pages/about-the-writer">Andrzej Sapkowski</a></li>
-                        <li><em>Eragon,</em>
-                            <a href="https://www.paolini.net/">Christopher Paolini</a></li>
-                        <li><em>The Catcher in the Rye,</em>
-                            <a href="https://en.wikipedia.org/wiki/J._D._Salinger">J.D. Salinger</a></li>
-                        <li><em>Man's Search for Meaning,</em>
-                            <a href="https://viktorfranklamerica.com/viktor-frankl-bio/">Viktor E. Frankl</a></li>
-                    </ol>
-            </div>
-            <div class="haiku">
-                <h2>Weather's Wisdom</h2>
-                    <p>Many storms may arise<br>Trust the water which shapes you<br>Storms bring forth wisdom<br></p>
-                    <p>Inspired by a reflection I wrote: <br><em>You're gunna carry that weight</em><br>the path from naïveté to wisdom.</p>
-            </div>
-            <div class="interests">
-                <h2>My interests:</h2>
-                    <p>I really enjoy playing Minecraft. It's a game I've played for around 12 years now, and I still not tired of it. Although it is just a video game, it's been a great creative outlet and helped shape the way I view the world.</p>
-                    <p> In a related note, I also enjoy Rocket League. I played for my previous institutions esports team in 2024 spring. Our team did pretty well that season, placing 3rd in a tier 2 NJCAA tournament.</p>
-                    <p>In the past year, I've gotten back into hiking. It has been a great way to touch grass and connect with nature. I'm quite excited for this summer, I have a few big hikes/camping trips I am planning with my brothers.</p>
-            </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="minecraft.html">Minecraft</a></li>
+            <li><a href="writing.html">Writing</a></li>
+        </ul>
+    </nav>
 
-    </div>
-<hr>
+    <main>
+        <section id="home-grid" class="grid-container">
+            <aside id="home-sidebar" class="sidebar">
+                <div class="image">
+                    <img id="pfp" src="css/assets/img/me.png">
+                </div>
+            <h3>Porter Sampson</h3><br>
+                <div id="about" class="textbox">
+                    <button class="toggle-div" onclick="toggleClass('aboutme-ext', 'inline')"><h4>About me</h4></button>
+                    <div id="aboutme-ext">
+                        <p>I'm a computer science student at UVU with a builder's mindset and a systems-oriented approach to problem-solving.</p> 
+                        <p>I see programming not just as a technical skill but as a form of thinking—structured, iterative, and deeply ethical.</p> 
+                        <p>I’m drawn to projects that ask more than just how something works, but why.</p>
+                    </div>
+                </div>
+                <div id="contact" class="textbox">
+                <button class="toggle-div" onclick="toggleClass('contact-ext', 'inline')"><h4>Contact</h4></button>
+                    <div id="contact-ext">
+                        <p>portersampson@proton.me</p>
+                        <a href="https://github.com/youngcantaloupe">Github</a>
+                        <a href="https://www.linkedin.com/in/porter-sampson-93309a1a4/">Linkedin</a>
+                        <a href="https://www.instagram.com/porter.sampson/">Instagram</a>
+                    </div>
+                </div>
+            </aside>
 
-<div class="table-container">
-    <h2>Class Schedule</h2>
-    <table>
-        <tr>
-            <th class="table-time"></th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-        </tr>
+            <h3>Highlights</h3>
+            <div class="home-top-container">
+                <article id="minecraft" class="textbox">
+                <a href="minecraft.html">
+                    <h4>Minecraft - World 5</h4>
+                </a>
+                    <p>Checkout some screenshots from my current Minecraft world.</p>
+                    <p><br><small>2025</small></p>
+                </article>
+                <article id="writing" class="textbox">
+                    <a href="writing.html">
+                    <h4>Writing - You're gunna carry that weight</h4>
+                    </a>
+                    <p>A short reflection on fire, faith, and forging a blade of wisdom.</p>
+                    <p><br><small>2025</small></p>
+                </article>
+            </div>
+            <div class="home-bot-container">
+            <h3>More!</h3>
+                <article id="linux" class="textbox">
 
-        <tr>
-            <th>9:00</th>
-            <td class="health1" rowspan="2">Health</td>
-            <td rowspan="3"></td>
-            <td class="health2" rowspan="2">Health</td>
-            <td rowspan="3"></td>
-            <td class="health3" rowspan="2">Health</td>
-        </tr>
-        <tr>
-            <th>9:30</th>
-        </tr>
-        <tr>
-            <th>10:00</th>
-            <td rowspan="4"></td>
-            <td rowspan="1"></td>
-            <td rowspan="1"></td>
-        </tr>
-        <tr>
-            <th>10:30</th>
-            <td class="research1" rowspan="3">Research</td>
-            <td class="projects1" rowspan="3">Projects</td>
-            <td class="gym1" rowspan="3">Gym</td>
-            <td class="projects2" rowspan="3">Projects</td>
-        </tr>
-        <tr>
-            <th>11:00</th>
-        </tr>
-        <tr>
-            <th>11:30</th>
-        </tr>
-        <tr>
-            <th>12:00</th>
-            <td class ="lunch" colspan="5" rowspan="2" >Lunch</td>
-        </tr>
-        <tr>
-            <th>12:30</th>
-        </tr>
-        <tr>
-            <th>1:00</th>
-            <td class="ds1" rowspan="3">Data Structures</td>
-            <td class="bl1" rowspan="6">Biology Lab</td>
-            <td class="ds2" rowspan="3">Data Structures</td>
-            <td class="bl2" rowspan="6">Biology Lab</td>
-            <td class="ds3" rowspan="3">Data Structures</td>
-        </tr>
-        <tr>
-            <th>1:30</th>
-        </tr>
-        <tr>
-            <th>2:00</th>
-        </tr>
-        <tr>
-            <th>2:30</th>
-            <td class="ce1" rowspan="3">Computer Ethics</td>
-            <td class="ce2" rowspan="3">Computer Ethics</td>
-            <td class="ce3" rowspan="3">Computer Ethics</td>
-            <!-- <td colspan="2" rowspan="6"></td> -->
-        </tr>
-        <tr>
-            <th>3:00</th>
-        </tr>
-        <tr>
-            <th>3:30</th>
-        </tr>
-        <tr>
-            <th>4:00</th>
-            <td colspan="3" rowspan="2"></td>
-            <td class="research2" rowspan="4">Research</td>
-            <td rowspan="3"></td>
-        </tr>
-        <tr>
-            <th>4:30</th>
-        </tr>
-        <tr>
-            <th>5:00</th>
-            <td class="gym2" colspan="3">Gym</td>
-        </tr>
+                    <button class="toggle-div" onclick="toggleClass('linux-ext', 'inline')"><h4>Linux</h4></button>
 
-    </table>
-</div>
+                    <p>I work in a ever evolving minimally riced Linux environment built on Ubuntu.</p>
+                    <div id="linux-ext">
+                        <p>
+                            <br>Specs:
+                            <br>OS: Ubuntu 24.04.2 LTS x86_64
+                            <br>WM: i3
+                            <br>Terminal: kitty (w/ tmux)
+                            <br>Shell: zsh 5.9
+                            <br>CPU: 12th Gen Intel i7-12700k @ 4.900GHz
+                            <br>GPU: NVIDIA GeForce RTX 3060
+                            <br>Memory: 31869MiB
+                        </p>
+                        <p><small><a href="https://github.com/youngcantaloupe/.dotfiles">Dots here!</a></small></p>
+                    </div>
+                </article>
+                <article id="bash" class="textbox">
+                   <a href="https://github.com/youngcantaloupe/bashscripts/tree/master"><h4>Bash Scripts</h4></a>
+                    <p>A collection of many helpful, and many not so helpful scripts.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <script src="/js/main.js"></script>
 </body>
-</div>
-</div>
 </html>
